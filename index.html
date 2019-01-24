@@ -1,82 +1,23 @@
-<html>
-    <head>
-        <script src="resource/js/jquery.js"></script>
-        <script src="resource/js/bootstrap.min.js"></script>
-
-        <script src="resource/js/data/post.js"></script>
-        <script src="resource/js/data/comment.js"></script>
-
-        <script src="https://www.gstatic.com/firebasejs/4.5.2/firebase.js"></script>
-        <script>
-//          // Initialize Firebase
-//          var config = {
-//            apiKey: "AIzaSyD9kbuA8mJ6cNFe09SvcqzBue1972SM1_4",
-//            authDomain: "alexeykhanykin-github-io.firebaseapp.com",
-//            databaseURL: "https://alexeykhanykin-github-io.firebaseio.com",
-//            projectId: "alexeykhanykin-github-io",
-//            storageBucket: "alexeykhanykin-github-io.appspot.com",
-//            messagingSenderId: "125486715811"
-//          };
-//          firebase.initializeApp(config);
-//          console.log(firebase.app().name);
-            var comments = [];
-            comments.push(new UserComment("comment1"));
-            comments.push(new UserComment("comment2"));
-            comments.push(new UserComment("comment3"));
-            comments.push(new UserComment("comment4"));
-            comments.push(new UserComment("comment5"));
-            var post = new Post("name","content", comments);
-            console.log(JSON.stringify(post));
-            comments.forEach(function(object){
-                console.log(object);
-            });
-        </script>
-        <link href="resource/css/bootstrap.min.css" rel="stylesheet">
-        <link href="resource/css/style.css" rel="stylesheet">
-        <script>
-
-        </script>
-    </head>
-    <body>
-         <!-- Fixed navbar -->
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-          <a class="navbar-brand" href="#">Блог Ханыкина А.И.</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-              </li>
-            </ul>
-            <form class="form-inline mt-2 mt-md-0">
-              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-          </div>
-        </nav>
-
-        <!-- Begin page content -->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-8">
-                </div>
-                <div class="col-md-4" style="background-color: red;">
-                </div>
-            </div>
-        </div>
-
-        <footer class="footer">
-          <div class="container">
-            <span class="text-muted">Place sticky footer content here.</span>
-          </div>
-        </footer>
-    </body>
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 	
+        <script type="text/javascript" src="http://www.rudebox.org.ua/js/jquery.js"></script>     
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+	</head>
+	<body>	
+		<div class="container">
+			<div class="content">
+				<div id="large-header" class="large-header">
+					<canvas id="canvas"></canvas>
+					<h1 class="main-title">coming soon</h1>
+				</div>				
+			</div>
+		<script src="js/TweenLite.min.js"></script>
+		<script src="js/EasePack.min.js"></script>
+		<script src="js/dots.js"></script>
+	</body>
 </html>
